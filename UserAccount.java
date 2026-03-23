@@ -88,7 +88,7 @@ public class UserAccount{
 
     //METHOD UNTUK MEMBELI
     public void beli(int hargaBeli){
-        if(this.saldo>=10000){
+        if(this.saldo>=10000 && this.saldo>hargaBeli){
             getJenisPelanggan();
             if(hargaBeli > 1000000){
                 this.saldo -= hargaBeli;
